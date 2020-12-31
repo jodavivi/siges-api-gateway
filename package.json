@@ -1,0 +1,32 @@
+{
+  "name": "siges-api-gateway",
+  "version": "1.0.0",
+  "description": "Servicio api gateway",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "request-promise-native": "^1.0.9",
+    "express-jwt": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "cors": "^2.8.5",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jodavivi/siges-api-gateway.git"
+  },
+  "author": "David Villanueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jodavivi/siges-api-gateway/issues"
+  },
+  "homepage": "https://github.com/jodavivi/siges-api-gateway#readme"
+}
