@@ -4,7 +4,8 @@
   "description": "Servicio api gateway",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --max-http-header-size=9999999 ./lib/index.js",
+    "start": "node ./lib/index.js",
+    "dev": "nodemon --max-http-header-size=9999999 ./lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
