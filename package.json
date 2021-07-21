@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./lib/index.js",
-    "dev": "nodemon --max-http-header-size=9999999 ./lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --max-http-header-size=9999999 ./lib/index.js" 
   },
   "dependencies": {
     "cors": "^2.8.5",
