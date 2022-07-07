@@ -4,8 +4,10 @@
   "description": "Servicio api gateway",
   "main": "index.js",
   "scripts": {
-    "start": "node ./lib/index.js",
-    "dev": "nodemon --max-http-header-size=9999999 ./lib/index.js" 
+    "start": "set NODE_ENV=development&& nodemon ./lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&& nodemon ./lib/index.js",
+    "prod": "set NODE_ENV=production&& nodemon ./lib/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -14,7 +16,9 @@
     "express-jwt": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
     "request": "^2.88.2",
-    "request-promise-native": "^1.0.9"
+    "request-promise-native": "^1.0.9",
+    "log4js": "^6.5.2",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
